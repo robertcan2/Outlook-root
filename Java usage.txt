@@ -1,0 +1,2 @@
+C:\Users\Robert\Desktop\First_java.javaAfter doing some research you have learned that there are some tools you need to use to create your site. Which of the following describes a remote folder?
+d. It stores your files online for testing, production, and collaboration
