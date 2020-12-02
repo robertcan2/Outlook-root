@@ -1,0 +1,67 @@
+C:\Users\Your Name>java -version
+
+Go to a JavaScript or VBScript function
+In Code view and the Code inspector, you can view a list of all the JavaScript or VBScript functions in your code and jump to any one of them.
+
+View the document in Code view (View > Code) or the Code inspector (Window > Code Inspector).
+Do one of the following:
+In Code view, right-click (Windows) or Control‑click (Macintosh) anywhere in Code view, and select the Functions submenu from the context menu.
+
+Note:
+
+The Functions submenu does not appear in Design view.
+
+Any JavaScript or VBScript functions in your code appear in the submenu.
+
+Note:
+
+To see the functions listed in alphabetical order, Control‑right-click (Windows) or Option-Control-click (Macintosh) in Code view, and then select the Functions submenu.  
+
+In the Code inspector, click the Code Navigation button ({ }) in the toolbar.
+Select a function name to jump to the function in your code.
+Extract JavaScript
+The JavaScript Extractor (JSE) removes all or most of the JavaScript from your Dreamweaver document, exports it to an external file, and links the external file to your document. The JSE can also remove event handlers such as onclick and onmouseover from your code and then unobtrusively attach the JavaScript associated with those handlers to your document.
+
+Note the following limitations of the JavaScript Extractor before using it:
+
+The JSE does not extract script tags in the body of the document (except in the case of Spry widgets). There is a chance that externalizing these scripts could cause unexpected results. By default, Dreamweaver lists these scripts in the Externalize JavaScript dialog box, but does not select them for extraction. (You can manually select them if you want.)
+
+The JSE does not extract JavaScript from editable regions of .dwt (Dreamweaver template) files, non-editable regions of template instances, or Dreamweaver Library items.
+
+After you extract JavaScript using the Externalize JavaScript and Attach Unobtrusively option, you can no longer edit Dreamweaver behaviors in the Behaviors panel. Dreamweaver cannot inspect and populate the Behaviors panel with behaviors that it has attached unobtrusively.
+
+You cannot undo your changes once you close the page. You can, however, undo changes as long as you remain in the same editing session. Select Edit > Undo Externalize JavaScript to undo.
+
+Some complex pages might not work as expected. Use care when extracting JavaScript from pages with document.write() in the body and global variables.
+
+For a video overview from the Dreamweaver engineering team about JavaScript support in Dreamweaver, see www.adobe.com/go/dw10javascript.
+
+To use the JavaScript Extractor:
+
+Open a page that contains JavaScript.
+
+Click Tools > Externalize JavaScript.
+
+In the Externalize JavaScript dialog box, edit the default selections if necessary.
+
+Select Only Externalize JavaScript if you want Dreamweaver to move any JavaScript to an external file, and to reference that file in the current document. This option leaves event handlers such as onclick and onload in the document, and leaves Behaviors visible in the Behaviors panel.
+
+Select Externalize JavaScript and Attach Unobtrusively if you want Dreamweaver to 1) move JavaScript to an external file and reference it in the current document, and 2) remove event handlers from the HTML and insert them at runtime using JavaScript. When you select this option, you can no longer edit Behaviors in the Behaviors panel.
+
+In the Edit column, deselect any edits you do not want to make, or select edits that Dreamweaver did not select by default.
+
+By default, Dreamweaver lists but does not select the following edits:
+
+Script blocks in the head of the document that contain document.write() or document.writeln() calls.
+
+Script blocks in the head of the document that contain function signatures related to EOLAS handling code, which is known to use document.write().
+
+Script blocks in the body of the document, unless the blocks contain only Spry widget or Spry data set constructors.
+
+Dreamweaver automatically assigns IDs to elements that don’t already have IDs. If you don’t like these IDs, you can change them by editing the ID text boxes.
+
+Click OK.
+
+The summary dialog provides a summary of extractions. Review the extractions and click OK.
+
+Save the page.
